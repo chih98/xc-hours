@@ -63,7 +63,10 @@ totalXC = round(totalXC, 2)
 totalPIC = round(totalPIC, 2)
 picXCTotal = round(picXCTotal, 2)
 
+remaining = 50 - picXCTotal
+
 print("======XC Totals======\n\nPIC:       " + safe_cast(totalPIC, str, "Unknown") +
 	  "\nXC:        " + safe_cast(totalXC, str, "Unknown") +
-	  "\nXC as PIC: "+ safe_cast(picXCTotal, str, "Unkonwn") +
+	  "\nXC as PIC: " + safe_cast(picXCTotal, str, "Unkonwn") +
+	  "\n\nRemaining: " + safe_cast(remaining, str, "Unknown") +
 	  "\n\n=====================")
