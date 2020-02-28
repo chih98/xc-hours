@@ -3,7 +3,14 @@
 # Goes through foreflight loogbook and
 # returns all PIC XC hours.
 
-filepath = input("Relative Path to ForeFlight's Logbook CSV: ")
+import sys
+
+filepath = ""
+
+if len(sys.argv) > 1: 
+	filepath = sys.argv[1]
+else:
+	filepath = input("Relative Path to ForeFlight's Logbook CSV: ")
 
 
 try:
